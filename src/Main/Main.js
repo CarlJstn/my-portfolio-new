@@ -1,14 +1,16 @@
 import React, { Component } from "react";
-// import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
-import Header from "../Components/Header/Header";
+import Projects from "../Pages/Projects/Projects";
 
 class Main extends Component {
   render() {
     return (
-      <>
-        <Header />
-      </>
+      <div style={{ paddingBottom: "60px" }}>
+        <Switch>
+          <Route exact path="/projects" component={Projects} />
+        </Switch>
+      </div>
     );
   }
 }

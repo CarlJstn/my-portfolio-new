@@ -1,0 +1,11 @@
+[
+  {
+    "image": "https://i.picsum.photos/id/1033/2048/1365.jpg",
+    "imageAlt": "tmc",
+    "title": "Easytrip Web Admin",
+    "whatIDid": "Front-end & Back-end",
+    "whatIUse": ["ReactJs", "Redux", "MDBReact", "Firebase"],
+    "contribution": "80",
+    "description": "An administration website for the Easytrip Mobile App. Where, admins can monitor their customer counts, customer registrations, vehicle registrations on a daily, weekly, monthly or yearly view. This site also have a list for users, vehicles, advertisements that is presented in a table format. There is also a view per user & vehicle where the admin can see all of its information and admin can also transfer registered vehicles to other users for whatever reason."
+  }
+]
