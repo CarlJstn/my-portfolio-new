@@ -1,17 +1,26 @@
 import React, { Component } from "react";
-import { InfoOutlined } from "@material-ui/icons";
+import { Language, GitHub } from "@material-ui/icons";
 
-class Info extends Component {
+class WebLink extends Component {
   render() {
-    const { show, text, handleMouseOver, handleMouseOut } = this.props;
+    const { github, show, text, handleMouseOver, handleMouseOut } = this.props;
 
     return (
       <>
-        <InfoOutlined
-          style={styles.infoIcon}
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
-        />
+        {github ? (
+          <GitHub
+            style={styles.infoIcon}
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
+          />
+        ) : (
+          <Language
+            style={styles.infoIcon}
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
+          />
+        )}
+
         {show && (
           <>
             <div style={styles.info}>{text}</div>
@@ -26,9 +35,7 @@ class Info extends Component {
 const styles = {
   infoIcon: {
     position: "relative",
-    top: "3px",
-    margin: "0 3px 0 0",
-    fontSize: "18px",
+    margin: "0 5px",
     cursor: "pointer",
     WebkitTapHighlightColor: "transparent",
   },
@@ -39,8 +46,8 @@ const styles = {
     zIndex: "1",
     padding: "10px",
     width: "250px",
-    bottom: "106%",
-    left: "-7px",
+    bottom: "149%",
+    left: "-120px",
     fontSize: "15px",
     borderRadius: "5px",
   },
@@ -51,9 +58,9 @@ const styles = {
     borderRight: "10px solid transparent",
     borderTop: "10px solid white",
     position: "absolute",
-    top: "-4px",
-    left: "-1px",
+    top: "-15px",
+    left: "7px",
   },
 };
 
-export default Info;
+export default WebLink;

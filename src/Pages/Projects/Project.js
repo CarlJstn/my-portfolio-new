@@ -1,14 +1,20 @@
 import React, { Component } from "react";
 import { Parallax } from "react-parallax";
-import { GitHub, Language } from "@material-ui/icons";
 
 import Info from "./Info";
+import WebLink from "./WebLink";
 
 class Project extends Component {
   state = {
     whatIDidInfoShow: false,
     whatIUseInfoShow: false,
     contributionInfoShow: false,
+    siteInfoShow: false,
+    githubInfoShow: false,
+  };
+
+  toggleInfo = (name) => {
+    this.setState({ [name]: !this.state[name] });
   };
 
   render() {
@@ -16,6 +22,8 @@ class Project extends Component {
       whatIDidInfoShow,
       whatIUseInfoShow,
       contributionInfoShow,
+      siteInfoShow,
+      githubInfoShow,
     } = this.state;
     const { project } = this.props;
     const contributionColor =
@@ -36,19 +44,44 @@ class Project extends Component {
             <div style={styles.projContainer}>
               <p style={styles.title}>{project.title}</p>
               <div style={styles.sitesContainer}>
-                <Language style={styles.siteIcon} />
-                <GitHub style={styles.siteIcon} />
+                <span style={styles.webLink}>
+                  <WebLink
+                    show={siteInfoShow}
+                    text="Link to live website."
+                    handleMouseOver={this.toggleInfo.bind(this, "siteInfoShow")}
+                    handleMouseOut={this.toggleInfo.bind(this, "siteInfoShow")}
+                  />
+                </span>
+
+                <span style={styles.webLink}>
+                  <WebLink
+                    github
+                    show={githubInfoShow}
+                    text="Link to github repository"
+                    handleMouseOver={this.toggleInfo.bind(
+                      this,
+                      "githubInfoShow"
+                    )}
+                    handleMouseOut={this.toggleInfo.bind(
+                      this,
+                      "githubInfoShow"
+                    )}
+                  />
+                </span>
               </div>
               <p style={styles.description}>{project.description}</p>
               <div style={styles.detailTitle}>
                 <Info
                   show={whatIDidInfoShow}
-                  handleMouseOver={() =>
-                    this.setState({ whatIDidInfoShow: true })
-                  }
-                  handleMouseOut={() =>
-                    this.setState({ whatIDidInfoShow: false })
-                  }
+                  text="In what part of project I'm assigned to."
+                  handleMouseOver={this.toggleInfo.bind(
+                    this,
+                    "whatIDidInfoShow"
+                  )}
+                  handleMouseOut={this.toggleInfo.bind(
+                    this,
+                    "whatIDidInfoShow"
+                  )}
                 />
                 WHAT I DID:{" "}
                 <span style={styles.detailText}>{project.whatIDid}</span>
@@ -56,12 +89,15 @@ class Project extends Component {
               <div style={styles.detailTitle}>
                 <Info
                   show={whatIUseInfoShow}
-                  handleMouseOver={() =>
-                    this.setState({ whatIUseInfoShow: true })
-                  }
-                  handleMouseOut={() =>
-                    this.setState({ whatIUseInfoShow: false })
-                  }
+                  text="Technologies, frameworks and plugins I use while developing this project."
+                  handleMouseOver={this.toggleInfo.bind(
+                    this,
+                    "whatIUseInfoShow"
+                  )}
+                  handleMouseOut={this.toggleInfo.bind(
+                    this,
+                    "whatIUseInfoShow"
+                  )}
                 />
                 WHAT I USE:{" "}
                 <span style={styles.detailText}>
@@ -76,12 +112,15 @@ class Project extends Component {
               >
                 <Info
                   show={contributionInfoShow}
-                  handleMouseOver={() =>
-                    this.setState({ contributionInfoShow: true })
-                  }
-                  handleMouseOut={() =>
-                    this.setState({ contributionInfoShow: false })
-                  }
+                  text="How much work I contribute in the whole project development."
+                  handleMouseOver={this.toggleInfo.bind(
+                    this,
+                    "contributionInfoShow"
+                  )}
+                  handleMouseOut={this.toggleInfo.bind(
+                    this,
+                    "contributionInfoShow"
+                  )}
                 />
                 CONTRIBUTION:{" "}
                 <span style={styles.contribution}>
@@ -162,9 +201,8 @@ const styles = {
     textAlign: "center",
     marginBottom: "10px",
   },
-  siteIcon: {
-    margin: "0 10px",
-    cursor: "pointer",
+  webLink: {
+    position: "relative",
   },
 };
 
