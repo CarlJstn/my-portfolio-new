@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589590103/christian-MHGYYNVD9LA-unsplash_chlw93.jpg",
+    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/c_scale,w_1920/v1589590103/christian-MHGYYNVD9LA-unsplash_chlw93.png",
     "imageAlt": "easytrip-wa",
     "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589623162/EasyTrip320x215_jbuj5i.png",
     "companyLogoAlt": "easytrip-icon",
@@ -11,7 +11,7 @@
     "description": "An administration website for the Easytrip Mobile App. Where, admins can monitor their customer counts, customer registrations, vehicle registrations on a daily, weekly, monthly or yearly view. This site also have a list for users, vehicles, advertisements that is presented in a table format. There is also a view per user & vehicle where the admin can see all of its information and admin can also transfer registered vehicles to other users."
   },
   {
-    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589590206/the-climate-reality-project-Hb6uWq0i4MI-unsplash_phhlqs.jpg",
+    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/c_scale,w_1920/v1589590206/the-climate-reality-project-Hb6uWq0i4MI-unsplash_phhlqs.png",
     "imageAlt": "brandzone-wa",
     "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589590276/logo_fmdrba.png",
     "companyLogoAlt": "brandzone-icon",
@@ -22,7 +22,7 @@
     "description": "A simple administration website for the Brandzone Web App. Where, admins can view a list of their users. Admins can also add, update & deactivate user’s account. And admins can also send announcements to it’s users."
   },
   {
-    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589622901/hush-naidoo-yo01Z-9HQAw-unsplash_wkddoe.jpg",
+    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/c_scale,w_1920/v1589622901/hush-naidoo-yo01Z-9HQAw-unsplash_wkddoe.png",
     "imageAlt": "tmc-ambu-web",
     "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589622900/tmc-logo_ulgzvd.png",
     "companyLogoAlt": "tmc-icon",
@@ -30,7 +30,18 @@
     "whatIDid": "Front-end",
     "whatIUse": ["ReactJs", "Redux", "Material-UI"],
     "contribution": "70",
-    "description": "A website for The Medical City – Ambulatory where customers can search procedures and add them to their cart and then book those procedures. Payment is process thru cash (Pay the bill in their cashier) or via credit card.",
+    "description": "A website for `The Medical City – Ambulatory` where customers can search procedures and add them to their cart and then book those procedures. Payment is process thru cash (Pay the bill in their cashier) or via credit card.",
     "website": "https://ambulatorycareonline.themedicalcity.com/"
+  },
+  {
+    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/c_scale,w_1920/v1589633148/bret-kavanaugh-MIfUp3FA5ek-unsplash_dyii8q.png",
+    "imageAlt": "tmc-ambu-wa",
+    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589622900/tmc-logo_ulgzvd.png",
+    "companyLogoAlt": "tmc-icon",
+    "title": "The Medical City - Ambulatory Web Admin",
+    "whatIDid": "Front-end",
+    "whatIUse": ["ReactJs", "Redux", "Material-UI"],
+    "contribution": "15",
+    "description": "An administration website where admins can see, update & remove their customer information’s, physicians, procedures, departments and schedules. I also created a copy paste function for schedules."
   }
 ]
