@@ -3,7 +3,13 @@ import React, { Component } from "react";
 import HeaderLink from "./HeaderLink";
 
 class Header extends Component {
+  state = { activeLink: window.location.pathname };
+  handleClick = (to) => {
+    this.setState({ activeLink: to });
+  };
+
   render() {
+    const { activeLink } = this.state;
     return (
       <div
         style={{
@@ -19,9 +25,26 @@ class Header extends Component {
           boxShadow: "0px 0px 20px -9px rgba(0,0,0,0.75)",
         }}
       >
-        <HeaderLink to="/" text="About" hasSeparator />
-        <HeaderLink to="/projects" text="Projects" hasSeparator />
-        <HeaderLink to="/contact" text="Contact" />
+        <HeaderLink
+          to="/"
+          text="About"
+          activeLink={activeLink}
+          handleClick={this.handleClick.bind(this)}
+          hasSeparator
+        />
+        <HeaderLink
+          to="/projects"
+          text="Projects"
+          activeLink={activeLink}
+          handleClick={this.handleClick.bind(this)}
+          hasSeparator
+        />
+        <HeaderLink
+          to="/contact"
+          text="Contact"
+          activeLink={activeLink}
+          handleClick={this.handleClick.bind(this)}
+        />
       </div>
     );
   }

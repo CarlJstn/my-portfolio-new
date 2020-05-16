@@ -3,7 +3,14 @@ import { Language, GitHub } from "@material-ui/icons";
 
 class WebLink extends Component {
   render() {
-    const { github, show, text, handleMouseOver, handleMouseOut } = this.props;
+    const {
+      github,
+      show,
+      text,
+      link,
+      handleMouseOver,
+      handleMouseOut,
+    } = this.props;
 
     return (
       <>
@@ -12,12 +19,14 @@ class WebLink extends Component {
             style={styles.infoIcon}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
+            onClick={() => (window.location.href = link)}
           />
         ) : (
           <Language
             style={styles.infoIcon}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
+            onClick={() => (window.location.href = link)}
           />
         )}
 
@@ -50,6 +59,7 @@ const styles = {
     left: "-92px",
     fontSize: "15px",
     borderRadius: "5px",
+    fontWeight: "bold",
   },
   arrow: {
     width: "0px",

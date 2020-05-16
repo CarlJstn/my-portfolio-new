@@ -2,7 +2,7 @@
   {
     "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589590103/christian-MHGYYNVD9LA-unsplash_chlw93.jpg",
     "imageAlt": "easytrip-wa",
-    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/c_fill,h_120,w_320/v1589590295/EasyTrip320x215_h1usgg.png",
+    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589623162/EasyTrip320x215_jbuj5i.png",
     "companyLogoAlt": "easytrip-icon",
     "title": "Easytrip Web Admin",
     "whatIDid": "Front-end & Back-end",
@@ -14,11 +14,23 @@
     "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589590206/the-climate-reality-project-Hb6uWq0i4MI-unsplash_phhlqs.jpg",
     "imageAlt": "brandzone-wa",
     "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589590276/logo_fmdrba.png",
-    "companyLogoAlt": "brandzonw-icon",
+    "companyLogoAlt": "brandzone-icon",
     "title": "Brandzone Web Admin",
     "whatIDid": "Front-end",
     "whatIUse": ["ReactJs", "Redux", "Tailwindcss"],
     "contribution": "90",
     "description": "A simple administration website for the Brandzone Web App. Where, admins can view a list of their users. Admins can also add, update & deactivate user’s account. And admins can also send announcements to it’s users."
+  },
+  {
+    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589622901/hush-naidoo-yo01Z-9HQAw-unsplash_wkddoe.jpg",
+    "imageAlt": "tmc-ambu-web",
+    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589622900/tmc-logo_ulgzvd.png",
+    "companyLogoAlt": "tmc-icon",
+    "title": "The Medical City - Ambulatory Web App",
+    "whatIDid": "Front-end",
+    "whatIUse": ["ReactJs", "Redux", "Material-UI"],
+    "contribution": "70",
+    "description": "A website for The Medical City – Ambulatory where customers can search procedures and add them to their cart and then book those procedures. Payment is process thru cash (Pay the bill in their cashier) or via credit card.",
+    "website": "https://ambulatorycareonline.themedicalcity.com/"
   }
 ]

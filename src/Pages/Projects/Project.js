@@ -55,30 +55,41 @@ class Project extends Component {
               />
               <p style={styles.title}>{project.title}</p>
               <div style={styles.sitesContainer}>
-                <span style={styles.webLink}>
-                  <WebLink
-                    show={siteInfoShow}
-                    text="Link to live website."
-                    handleMouseOver={this.toggleInfo.bind(this, "siteInfoShow")}
-                    handleMouseOut={this.toggleInfo.bind(this, "siteInfoShow")}
-                  />
-                </span>
-
-                <span style={styles.webLink}>
-                  <WebLink
-                    github
-                    show={githubInfoShow}
-                    text="Link to github repository"
-                    handleMouseOver={this.toggleInfo.bind(
-                      this,
-                      "githubInfoShow"
-                    )}
-                    handleMouseOut={this.toggleInfo.bind(
-                      this,
-                      "githubInfoShow"
-                    )}
-                  />
-                </span>
+                {project.website && (
+                  <span style={styles.webLink}>
+                    <WebLink
+                      show={siteInfoShow}
+                      text="Link to live website."
+                      link={project.website}
+                      handleMouseOver={this.toggleInfo.bind(
+                        this,
+                        "siteInfoShow"
+                      )}
+                      handleMouseOut={this.toggleInfo.bind(
+                        this,
+                        "siteInfoShow"
+                      )}
+                    />
+                  </span>
+                )}
+                {project.github && (
+                  <span style={styles.webLink}>
+                    <WebLink
+                      github
+                      show={githubInfoShow}
+                      text="Link to github repository"
+                      link={project.github}
+                      handleMouseOver={this.toggleInfo.bind(
+                        this,
+                        "githubInfoShow"
+                      )}
+                      handleMouseOut={this.toggleInfo.bind(
+                        this,
+                        "githubInfoShow"
+                      )}
+                    />
+                  </span>
+                )}
               </div>
               <p style={styles.description}>{project.description}</p>
               <div style={styles.detailTitle}>
@@ -123,7 +134,7 @@ class Project extends Component {
               >
                 <Info
                   show={contributionInfoShow}
-                  text="How much work I contribute in the whole project development."
+                  text="How much work I contribute to the whole project development."
                   handleMouseOver={this.toggleInfo.bind(
                     this,
                     "contributionInfoShow"
@@ -218,7 +229,7 @@ const styles = {
     position: "relative",
   },
   companyLogo: {
-    width: "110px",
+    height: "30px",
     margin: "0 auto",
     display: "block",
   },
