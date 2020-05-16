@@ -11,7 +11,12 @@ class Project extends Component {
     contributionInfoShow: false,
     siteInfoShow: false,
     githubInfoShow: false,
+    showPercentage: false,
   };
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ showPercentage: true }), 100);
+  }
 
   toggleInfo = (name) => {
     this.setState({ [name]: !this.state[name] });
@@ -24,6 +29,7 @@ class Project extends Component {
       contributionInfoShow,
       siteInfoShow,
       githubInfoShow,
+      showPercentage,
     } = this.state;
     const { project } = this.props;
     const contributionColor =
@@ -42,6 +48,11 @@ class Project extends Component {
         <div style={styles.projBackground}>
           <div style={styles.projMain}>
             <div style={styles.projContainer}>
+              <img
+                src={project.companyLogo}
+                alt={project.companyLogoAlt}
+                style={styles.companyLogo}
+              />
               <p style={styles.title}>{project.title}</p>
               <div style={styles.sitesContainer}>
                 <span style={styles.webLink}>
@@ -83,7 +94,7 @@ class Project extends Component {
                     "whatIDidInfoShow"
                   )}
                 />
-                WHAT I DID:{" "}
+                ASSIGNMENT:{" "}
                 <span style={styles.detailText}>{project.whatIDid}</span>
               </div>
               <div style={styles.detailTitle}>
@@ -122,13 +133,13 @@ class Project extends Component {
                     "contributionInfoShow"
                   )}
                 />
-                CONTRIBUTION:{" "}
+                WORK:{" "}
                 <span style={styles.contribution}>
                   <span
                     style={{
                       ...styles.contributionPercentage,
                       ...{
-                        width: `${project.contribution}%`,
+                        width: `${showPercentage ? project.contribution : 0}%`,
                         background: contributionColor,
                       },
                     }}
@@ -159,10 +170,11 @@ const styles = {
     background: "rgba(0, 0, 0, 0.78)",
     color: "white",
     padding: "10px 20px",
-    margin: "2% auto",
+    margin: "10% auto",
     borderRadius: "5px",
     maxWidth: "1500px",
     width: "85%",
+    position: "relative",
   },
   title: {
     textAlign: "center",
@@ -193,9 +205,10 @@ const styles = {
   },
   contributionPercentage: {
     height: "15px",
-    borderRadius: "10px 0 0 10px",
+    borderRadius: "10px",
     textAlign: "center",
     fontSize: "10.7px",
+    transition: "width 1.5s",
   },
   sitesContainer: {
     textAlign: "center",
@@ -203,6 +216,11 @@ const styles = {
   },
   webLink: {
     position: "relative",
+  },
+  companyLogo: {
+    width: "110px",
+    margin: "0 auto",
+    display: "block",
   },
 };
 

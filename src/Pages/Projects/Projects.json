@@ -1,11 +1,24 @@
 [
   {
-    "image": "https://i.picsum.photos/id/1033/2048/1365.jpg",
-    "imageAlt": "tmc",
+    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589590103/christian-MHGYYNVD9LA-unsplash_chlw93.jpg",
+    "imageAlt": "easytrip-wa",
+    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/c_fill,h_120,w_320/v1589590295/EasyTrip320x215_h1usgg.png",
+    "companyLogoAlt": "easytrip-icon",
     "title": "Easytrip Web Admin",
     "whatIDid": "Front-end & Back-end",
     "whatIUse": ["ReactJs", "Redux", "MDBReact", "Firebase"],
     "contribution": "80",
-    "description": "An administration website for the Easytrip Mobile App. Where, admins can monitor their customer counts, customer registrations, vehicle registrations on a daily, weekly, monthly or yearly view. This site also have a list for users, vehicles, advertisements that is presented in a table format. There is also a view per user & vehicle where the admin can see all of its information and admin can also transfer registered vehicles to other users for whatever reason."
+    "description": "An administration website for the Easytrip Mobile App. Where, admins can monitor their customer counts, customer registrations, vehicle registrations on a daily, weekly, monthly or yearly view. This site also have a list for users, vehicles, advertisements that is presented in a table format. There is also a view per user & vehicle where the admin can see all of its information and admin can also transfer registered vehicles to other users."
+  },
+  {
+    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589590206/the-climate-reality-project-Hb6uWq0i4MI-unsplash_phhlqs.jpg",
+    "imageAlt": "brandzone-wa",
+    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589590276/logo_fmdrba.png",
+    "companyLogoAlt": "brandzonw-icon",
+    "title": "Brandzone Web Admin",
+    "whatIDid": "Front-end",
+    "whatIUse": ["ReactJs", "Redux", "Tailwindcss"],
+    "contribution": "90",
+    "description": "A simple administration website for the Brandzone Web App. Where, admins can view a list of their users. Admins can also add, update & deactivate user’s account. And admins can also send announcements to it’s users."
   }
 ]

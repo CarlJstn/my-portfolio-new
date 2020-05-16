@@ -40,7 +40,7 @@ const styles = {
     padding: "10px",
     width: "250px",
     bottom: "106%",
-    left: "-7px",
+    left: "-10px",
     fontSize: "15px",
     borderRadius: "5px",
   },

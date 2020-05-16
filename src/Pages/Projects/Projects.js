@@ -7,7 +7,7 @@ import Project from "./Project";
 class Projects extends Component {
   render() {
     return (
-      <div>
+      <div className="fade-in">
         {projects.map((project, index) => {
           return <Project key={index} project={project} />;
         })}
