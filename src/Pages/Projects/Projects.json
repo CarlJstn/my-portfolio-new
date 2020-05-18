@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/c_scale,w_1920/v1589622901/hush-naidoo-yo01Z-9HQAw-unsplash_wkddoe.png",
     "imageAlt": "tmc-ambu-web",
     "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589622900/tmc-logo_ulgzvd.png",
@@ -12,6 +13,7 @@
     "website": "https://ambulatorycareonline.themedicalcity.com/"
   },
   {
+    "id": "2",
     "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/c_scale,w_1920/v1589633148/bret-kavanaugh-MIfUp3FA5ek-unsplash_dyii8q.png",
     "imageAlt": "tmc-ambu-wa",
     "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589622900/tmc-logo_ulgzvd.png",
@@ -23,17 +25,19 @@
     "description": "An administration website where admins can see, update & remove their customer information’s, physicians, procedures, departments and schedules. I also created a copy paste function for schedules."
   },
   {
+    "id": "3",
     "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/c_scale,w_1920/v1589590103/christian-MHGYYNVD9LA-unsplash_chlw93.png",
     "imageAlt": "easytrip-wa",
     "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589623162/EasyTrip320x215_jbuj5i.png",
     "companyLogoAlt": "easytrip-icon",
     "title": "Easytrip Web Admin",
-    "whatIDid": "Front-end & Back-end",
+    "whatIDid": "Front-end",
     "whatIUse": ["ReactJs", "Redux", "MDBReact", "Firebase"],
     "contribution": "80",
     "description": "An administration website for the Easytrip Mobile App. Where, admins can monitor their customer counts, customer registrations, vehicle registrations on a daily, weekly, monthly or yearly view. This site also have a list for users, vehicles, advertisements that is presented in a table format. There is also a view per user & vehicle where the admin can see all of its information and admin can also transfer registered vehicles to other users."
   },
   {
+    "id": "4",
     "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/c_scale,w_1920/v1589590206/the-climate-reality-project-Hb6uWq0i4MI-unsplash_phhlqs.png",
     "imageAlt": "brandzone-wa",
     "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589590276/logo_fmdrba.png",

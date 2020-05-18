@@ -134,7 +134,7 @@ class Project extends Component {
               >
                 <Info
                   show={contributionInfoShow}
-                  text="How much work I contribute to the whole project development."
+                  text="How much work I contribute to the whole project development based on where I'm assigned."
                   handleMouseOver={this.toggleInfo.bind(
                     this,
                     "contributionInfoShow"
