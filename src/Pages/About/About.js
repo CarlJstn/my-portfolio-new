@@ -30,7 +30,7 @@ class About extends Component {
 
   render() {
     return (
-      <div className="fade-in">
+      <div className="fade-in-easy">
         <div id="scene" style={styles.main}>
           <div style={styles.overlay}></div>
           <img
