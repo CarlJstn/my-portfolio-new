@@ -41,7 +41,7 @@
     "title": "The Medical City - Ambulatory Web Admin",
     "whatIDid": "Front-end",
     "whatIUse": ["ReactJs", "Redux", "Material-UI"],
-    "contribution": "15",
+    "contribution": "20",
     "description": "An administration website where admins can see, update & remove their customer information’s, physicians, procedures, departments and schedules. I also created a copy paste function for schedules."
   }
 ]

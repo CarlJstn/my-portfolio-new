@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
 
 @keyframes fadeInOpacity {
   0% {
@@ -13,7 +14,7 @@
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 0.2s;
+  animation-duration: 0.4s;
 }
 
 html * {
@@ -30,4 +31,43 @@ p {
 
 .header-link:hover {
   text-shadow: 0px 0px 1px #6161616e;
+}
+
+.name-container {
+  display: table !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .name {
+    font-size: 50px !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .name {
+    font-size: 55px !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .name {
+    font-size: 60px !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .name {
+    font-size: 65px !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .name {
+    font-size: 70px !important;
+  }
 }
