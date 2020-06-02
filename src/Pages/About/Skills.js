@@ -44,7 +44,7 @@ const styles = {
     position: "absolute",
   },
   titleContainer: {
-    width: "280px",
+    width: "235px",
     display: "block",
     margin: "75px auto 0px",
     background: "rgba(128, 128, 128, 0.65)",
