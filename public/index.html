@@ -40,4 +40,31 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    let el = document.querySelector(".horizontal-drag");
+    let x = 0,
+      y = 0,
+      topp = 0,
+      left = 0;
+
+    let draggingFunction = (e) => {
+      document.addEventListener("mouseup", () => {
+        document.removeEventListener("mousemove", draggingFunction);
+      });
+
+      el.scrollLeft = left - e.pageX + x;
+      el.scrollTop = topp - e.pageY + y;
+    };
+
+    el.addEventListener("mousedown", (e) => {
+      e.preventDefault();
+
+      y = e.pageY;
+      x = e.pageX;
+      topp = el.scrollTop;
+      left = el.scrollLeft;
+
+      document.addEventListener("mousemove", draggingFunction);
+    });
+  </script>
 </html>

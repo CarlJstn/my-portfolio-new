@@ -56,6 +56,22 @@ p {
   display: table !important;
 }
 
+/* width */
+.hide-scrollbar::-webkit-scrollbar {
+  height: 12px;
+}
+
+/* Track */
+.hide-scrollbar::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* Handle */
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background: #00000087;
+  border-radius: 5px;
+}
+
 @media only screen and (max-width: 320px) {
   .name {
     font-size: 52px !important;

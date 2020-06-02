@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+import SkillList from "./SkillList.json";
+// Superior, Advanced, Intermediate, and Novice
+
 class Skills extends Component {
   render() {
     return (
@@ -15,7 +18,44 @@ class Skills extends Component {
               {"<"} SKILLS {">"}
             </p>
           </div>
-          <div style={styles.skillsContainer}></div>
+          <div style={styles.skillsContainer}>
+            <div
+              className="horizontal-drag hide-scrollbar"
+              style={styles.skillsMain}
+            >
+              {SkillList.map((skill) => {
+                return (
+                  <div key={skill.id} id="skill" style={styles.skillContainer}>
+                    <img
+                      src={skill.icon}
+                      alt={`${skill.skill}-icon`}
+                      style={styles.skillIcon}
+                    />
+                    <p style={styles.skillTitle}>{skill.skill}</p>
+                    <p style={styles.skillProficiency}>
+                      <span>Proficiency: </span>
+                      <span
+                        style={{
+                          color:
+                            skill.proficiency === "Superior"
+                              ? "red"
+                              : skill.proficiency === "Advanced"
+                              ? "orange"
+                              : skill.proficiency === "Intermediate"
+                              ? "yellow"
+                              : skill.proficiency === "Novice"
+                              ? "green"
+                              : "white",
+                        }}
+                      >
+                        {skill.proficiency}
+                      </span>
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -44,7 +84,7 @@ const styles = {
     position: "absolute",
   },
   titleContainer: {
-    width: "235px",
+    width: "245px",
     display: "block",
     margin: "75px auto 0px",
     background: "rgba(128, 128, 128, 0.65)",
@@ -56,16 +96,49 @@ const styles = {
   },
   title: {
     fontSize: "50px",
-    fontFamily: '"Open Sans Condensed", sans-serif',
+    fontWeight: "bold",
   },
   skillsContainer: {
     width: "calc(100% - 40px)",
     height: "calc(100% - 182px)",
-    background: "rgba(128, 128, 128, 0.65)",
-    margin: "20px",
+    background: "rgba(128, 128, 128, 0.25)",
+    margin: "8vh 20px 0",
     borderRadius: "5px",
     backdropFilter: "blur(4px)",
     WebkitBackdropFilter: "blur(4px)",
+    maxHeight: "60vh",
+  },
+  skillsMain: {
+    height: "100%",
+    width: "calc(100% - 20px)",
+    margin: "0 auto",
+    display: "flex",
+    flexFlow: "column wrap",
+    overflow: "auto",
+  },
+  skillContainer: {
+    background: "rgba(255, 255, 255, 0.13)",
+    position: "relative",
+    margin: "10px 5px",
+    padding: "20px 10px",
+    width: "calc(100% - 60px)",
+    maxWidth: "300px",
+    height: "calc(100% - 60px)",
+    borderRadius: "5px",
+  },
+  skillIcon: { height: "40%", display: "block", margin: "0 auto" },
+  skillTitle: {
+    textAlign: "center",
+    marginTop: "20%",
+    fontSize: "35px",
+    color: "white",
+  },
+  skillProficiency: {
+    textAlign: "center",
+    marginTop: "10px",
+    color: "white",
+    fontSize: "18px",
+    fontWeight: "bold",
   },
 };
 

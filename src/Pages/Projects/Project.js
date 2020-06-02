@@ -185,7 +185,7 @@ const styles = {
     padding: "10px 20px",
     margin: "10% auto",
     borderRadius: "5px",
-    maxWidth: "1500px",
+    maxWidth: "1000px",
     width: "85%",
     position: "relative",
   },
