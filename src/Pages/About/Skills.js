@@ -14,9 +14,7 @@ class Skills extends Component {
         />
         <div style={styles.main}>
           <div style={styles.titleContainer}>
-            <p style={styles.title}>
-              {"<"} SKILLS {">"}
-            </p>
+            <p style={styles.title}>SKILLS</p>
           </div>
           <div style={styles.skillsContainer}>
             <div
@@ -84,7 +82,7 @@ const styles = {
     position: "absolute",
   },
   titleContainer: {
-    width: "245px",
+    width: "220px",
     display: "block",
     margin: "75px auto 0px",
     background: "rgba(128, 128, 128, 0.65)",
