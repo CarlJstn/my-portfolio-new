@@ -94,7 +94,7 @@ const styles = {
     width: "fit-content",
     padding: "0 20px",
     display: "block",
-    margin: "75px auto 0px",
+    margin: "90px auto 0px",
     background: "rgba(128, 128, 128, 0.65)",
     borderRadius: "5px",
     backdropFilter: "blur(4px)",
