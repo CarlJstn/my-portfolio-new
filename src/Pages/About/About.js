@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Indicator from "./Indicator";
 import Landing from "./Landing";
 import Skills from "./Skills";
+import Experience from "./Experience";
 
 class About extends Component {
   render() {
@@ -12,17 +13,10 @@ class About extends Component {
 
         <Landing />
         <Skills />
-        <div style={styles.expContainer}></div>
+        <Experience />
       </div>
     );
   }
 }
-const styles = {
-  expContainer: {
-    height: "100vh",
-    width: "100%",
-    background: "lightgray",
-  },
-};
 
 export default About;

@@ -1,9 +1,9 @@
 [
   {
     "id": "1",
-    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1590988345/hush-naidoo-yo01Z-9HQAw-unsplash_wkddoe_enflra.jpg",
+    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1590988345/portfolio-projects/hush-naidoo-yo01Z-9HQAw-unsplash_wkddoe_enflra.jpg",
     "imageAlt": "tmc-ambu-web",
-    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589622900/tmc-logo_ulgzvd.png",
+    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589622900/portfolio-projects/tmc-logo_ulgzvd.png",
     "companyLogoAlt": "tmc-icon",
     "title": "The Medical City - Ambulatory Web App",
     "whatIDid": "Front-end",
@@ -14,9 +14,9 @@
   },
   {
     "id": "2",
-    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1590988345/bret-kavanaugh-MIfUp3FA5ek-unsplash_dyii8q_ax8gme.jpg",
+    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1590988345/portfolio-projects/bret-kavanaugh-MIfUp3FA5ek-unsplash_dyii8q_ax8gme.jpg",
     "imageAlt": "tmc-ambu-wa",
-    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589622900/tmc-logo_ulgzvd.png",
+    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589622900/portfolio-projects/tmc-logo_ulgzvd.png",
     "companyLogoAlt": "tmc-icon",
     "title": "The Medical City - Ambulatory Web Admin",
     "whatIDid": "Front-end",
@@ -26,9 +26,9 @@
   },
   {
     "id": "3",
-    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1590988345/christian-MHGYYNVD9LA-unsplash_chlw93_cpn6an.jpg",
+    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1591145557/portfolio-projects/ec-trip-bg_bxvjh0.jpg",
     "imageAlt": "easytrip-wa",
-    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589623162/EasyTrip320x215_jbuj5i.png",
+    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589623162/portfolio-projects/EasyTrip320x215_jbuj5i.png",
     "companyLogoAlt": "easytrip-icon",
     "title": "Easytrip Web Admin",
     "whatIDid": "Front-end",
@@ -38,9 +38,9 @@
   },
   {
     "id": "4",
-    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1590988345/the-climate-reality-project-Hb6uWq0i4MI-unsplash_phhlqs_wvpvdo.jpg",
+    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1591145557/portfolio-projects/brandzone-bg_wrhatp.jpg",
     "imageAlt": "brandzone-wa",
-    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589590276/logo_fmdrba.png",
+    "companyLogo": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1589590276/portfolio-projects/logo_fmdrba.png",
     "companyLogoAlt": "brandzone-icon",
     "title": "Brandzone Web Admin",
     "whatIDid": "Front-end",

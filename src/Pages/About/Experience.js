@@ -1,54 +1,38 @@
 import React, { Component } from "react";
 
-import SkillList from "./SkillList.json";
+import ExperienceList from "./ExperienceList.json";
 // Superior, Advanced, Intermediate, and Novice
 
-class Skills extends Component {
+class Experience extends Component {
   render() {
     return (
       <div style={styles.container}>
         <img
-          src="https://res.cloudinary.com/dxdwckvxy/image/upload/v1590985929/portfolio/pankaj-patel-1IW4HQuauSU-unsplash-min_doxm1f.jpg"
-          alt="skills-bg"
+          src="https://res.cloudinary.com/dxdwckvxy/image/upload/v1591145605/portfolio/exp-bg_vwaze4.jpg"
+          alt="experience-bg"
           style={styles.bg}
         />
         <div style={styles.main}>
           <div style={styles.titleContainer}>
-            <p style={styles.title}>SKILLS</p>
+            <p style={styles.title}>EXPERIENCE</p>
           </div>
-          <div style={styles.skillsContainer}>
+          <div style={styles.expsContainer}>
             <div
               className="horizontal-drag hide-scrollbar"
-              style={styles.skillsMain}
+              style={styles.expsMain}
             >
-              {SkillList.map((skill) => {
+              {ExperienceList.map((exp) => {
                 return (
-                  <div key={skill.id} style={styles.skillContainer}>
+                  <div key={exp.id} id="exp" style={styles.expContainer}>
                     <img
-                      src={skill.icon}
-                      alt={`${skill.skill}-icon`}
-                      style={styles.skillIcon}
+                      src={exp.icon}
+                      alt={`${exp.exp}-icon`}
+                      style={styles.expIcon}
                     />
-                    <p style={styles.skillTitle}>{skill.skill}</p>
-                    <p style={styles.skillProficiency}>
-                      <span>Proficiency: </span>
-                      <span
-                        style={{
-                          color:
-                            skill.proficiency === "Superior"
-                              ? "red"
-                              : skill.proficiency === "Advanced"
-                              ? "orange"
-                              : skill.proficiency === "Intermediate"
-                              ? "yellow"
-                              : skill.proficiency === "Novice"
-                              ? "green"
-                              : "white",
-                        }}
-                      >
-                        {skill.proficiency}
-                      </span>
-                    </p>
+                    <p style={styles.expTitle}>{exp.exp}</p>
+                    <p style={styles.expLocation}>{exp.location}</p>
+                    <p style={styles.expLocation}>{exp.date}</p>
+                    <p style={styles.expPostion}>{exp.position}</p>
                   </div>
                 );
               })}
@@ -97,7 +81,7 @@ const styles = {
     fontSize: "50px",
     fontWeight: "bold",
   },
-  skillsContainer: {
+  expsContainer: {
     width: "calc(100% - 40px)",
     height: "calc(100% - 182px)",
     background: "rgba(128, 128, 128, 0.25)",
@@ -107,7 +91,7 @@ const styles = {
     WebkitBackdropFilter: "blur(4px)",
     maxHeight: "60vh",
   },
-  skillsMain: {
+  expsMain: {
     height: "100%",
     width: "calc(100% - 20px)",
     margin: "0 auto",
@@ -115,30 +99,35 @@ const styles = {
     flexFlow: "column wrap",
     overflow: "auto",
   },
-  skillContainer: {
+  expContainer: {
     background: "rgba(255, 255, 255, 0.13)",
     position: "relative",
-    margin: "10px 5px",
+    // margin: "10px 5px",
+    margin: "10px auto",
     padding: "20px 10px",
     width: "calc(100% - 60px)",
     maxWidth: "300px",
     height: "calc(100% - 60px)",
     borderRadius: "5px",
   },
-  skillIcon: { height: "40%", display: "block", margin: "0 auto" },
-  skillTitle: {
+  expIcon: { height: "40%", display: "block", margin: "0 auto" },
+  expTitle: {
     textAlign: "center",
     marginTop: "20%",
     fontSize: "35px",
     color: "white",
   },
-  skillProficiency: {
-    textAlign: "center",
-    marginTop: "10px",
+  expLocation: {
     color: "white",
-    fontSize: "18px",
-    fontWeight: "bold",
+    textAlign: "center",
+    fontSize: "14px",
+  },
+  expPostion: {
+    color: "white",
+    textAlign: "center",
+    fontSize: "25px",
+    margin: "15px 0",
   },
 };
 
-export default Skills;
+export default Experience;

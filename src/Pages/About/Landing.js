@@ -32,19 +32,19 @@ class Landing extends Component {
       <div id="scene" style={styles.main}>
         <div style={styles.overlay}></div>
         <img
-          src="https://res.cloudinary.com/dxdwckvxy/image/upload/v1590988344/bg1.2_lpvjlv_idzlim.jpg"
+          src="https://res.cloudinary.com/dxdwckvxy/image/upload/v1590988344/portfolio/bg1.2_lpvjlv_idzlim.jpg"
           alt="about-bg"
           style={styles.bg}
         ></img>
         <img
           data-depth="0.2"
-          src="https://res.cloudinary.com/dxdwckvxy/image/upload/v1590988344/bg1.2_lpvjlv_idzlim.jpg"
+          src="https://res.cloudinary.com/dxdwckvxy/image/upload/v1590988344/portfolio/bg1.2_lpvjlv_idzlim.jpg"
           alt="about-bg"
           style={styles.bg}
         ></img>
         <img
           data-depth="0.6"
-          src="https://res.cloudinary.com/dxdwckvxy/image/upload/v1590988737/bg3_zeilgu_atuh4m.png"
+          src="https://res.cloudinary.com/dxdwckvxy/image/upload/v1590988737/portfolio/bg3_zeilgu_atuh4m.png"
           alt="about-bg"
           style={styles.bg}
         ></img>
