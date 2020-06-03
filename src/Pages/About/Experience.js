@@ -12,6 +12,7 @@ class Experience extends Component {
           alt="experience-bg"
           style={styles.bg}
         />
+        <div style={styles.bgBackdrop}></div>
         <div style={styles.main}>
           <div style={styles.titleContainer}>
             <p style={styles.title}>EXPERIENCE</p>
@@ -65,6 +66,14 @@ const styles = {
     objectFit: "cover",
     position: "absolute",
   },
+  bgBackdrop: {
+    width: "100%",
+    height: "100vh",
+    position: "absolute",
+    background: "#00000061",
+    backdropFilter: "blur(4px)",
+    WebkitBackdropFilter: "blur(4px)",
+  },
   titleContainer: {
     width: "fit-content",
     padding: "0 20px",
@@ -109,6 +118,7 @@ const styles = {
     maxWidth: "300px",
     height: "calc(100% - 60px)",
     borderRadius: "5px",
+    cursor: "grab",
   },
   expIcon: { height: "40%", display: "block", margin: "0 auto" },
   expTitle: {
