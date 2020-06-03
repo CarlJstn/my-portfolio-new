@@ -90,12 +90,14 @@ class Landing extends Component {
 const styles = {
   main: {
     height: "100vh",
+    minHeight: "567px",
     width: "100%",
     overflow: "hidden",
   },
   overlay: {
     width: "100%",
     height: "100vh",
+    minHeight: "567px",
     background: "#2525256e",
     backdropFilter: "blur(3px)",
     WebkitBackdropFilter: "blur(3px)",
@@ -104,6 +106,7 @@ const styles = {
   },
   bg: {
     height: "100vh",
+    minHeight: "567px",
     width: "100vw",
     objectFit: "cover",
   },
@@ -111,6 +114,7 @@ const styles = {
     maxWidth: "400px",
     width: "calc(100vw - 10%)",
     height: "100vh",
+    minHeight: "567px",
     zIndex: "2",
     paddingLeft: "5%",
   },

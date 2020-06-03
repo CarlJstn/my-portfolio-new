@@ -10,7 +10,6 @@ class About extends Component {
     return (
       <div className="fade-in-easy">
         <Indicator />
-
         <Landing />
         <Skills />
         <Experience />

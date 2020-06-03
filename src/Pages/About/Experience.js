@@ -48,11 +48,13 @@ class Experience extends Component {
 const styles = {
   container: {
     height: "100vh",
+    minHeight: "567px",
     width: "100%",
     position: "relative",
   },
   main: {
     height: "100vh",
+    minHeight: "567px",
     width: "100%",
     maxWidth: "1600px",
     margin: "0px auto",
@@ -63,12 +65,14 @@ const styles = {
   bg: {
     width: "100%",
     height: "100vh",
+    minHeight: "567px",
     objectFit: "cover",
     position: "absolute",
   },
   bgBackdrop: {
     width: "100%",
     height: "100vh",
+    minHeight: "567px",
     position: "absolute",
     background: "#00000061",
     backdropFilter: "blur(4px)",
@@ -93,6 +97,7 @@ const styles = {
   expsContainer: {
     width: "calc(100% - 40px)",
     height: "calc(100% - 182px)",
+    minHeight: "341px",
     background: "rgba(128, 128, 128, 0.25)",
     margin: "8vh 20px 0",
     borderRadius: "5px",
@@ -135,8 +140,8 @@ const styles = {
   expPostion: {
     color: "white",
     textAlign: "center",
-    fontSize: "25px",
-    margin: "15px 0",
+    fontSize: "20px",
+    margin: "15px 0 0",
   },
 };
 

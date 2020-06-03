@@ -150,12 +150,14 @@ class Project extends Component {
 const styles = {
   projBackground: {
     height: "100vh",
+    minHeight: "567px",
     display: "table",
   },
   projBackgroundImage: {
     position: "absolute",
     width: "100%",
     height: "100vh",
+    minHeight: "567px",
     objectFit: "cover",
   },
   projMain: {
@@ -169,7 +171,7 @@ const styles = {
     WebkitBackdropFilter: "blur(5px)",
     color: "white",
     padding: "10px 20px",
-    margin: "10% auto",
+    margin: "0 auto",
     borderRadius: "5px",
     maxWidth: "1000px",
     width: "85%",

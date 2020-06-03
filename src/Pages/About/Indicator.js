@@ -51,7 +51,7 @@ class Indicator extends Component {
   render() {
     const { active } = this.state;
     return (
-      <div style={styles.indicator}>
+      <div className="remove-when-screen-is-too-short" style={styles.indicator}>
         <Face
           style={
             active === 0

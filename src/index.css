@@ -71,26 +71,38 @@ p {
   border-radius: 5px;
 }
 
+/* Below 500px screen height */
+@media only screen and (max-height: 500px) {
+  .remove-when-screen-is-too-short {
+    display: none !important;
+  }
+}
+
+/* Below 320px screen width */
 @media only screen and (max-width: 320px) {
   .name {
     font-size: 52px !important;
   }
 }
 
+/* Above 321px screen width */
 @media only screen and (min-width: 321px) {
   .name {
     font-size: 60px !important;
   }
 }
 
+/* Above 600px screen width */
 @media only screen and (min-width: 600px) {
   .name {
     font-size: 75px !important;
   }
 }
 
+/* Above 768px screen width */
 @media only screen and (min-width: 768px) {
 }
 
+/* Above 1200px screen width */
 @media only screen and (min-width: 1200px) {
 }
