@@ -3,3 +3,9 @@
   to = "/projects"
   status = 200
   force = false
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact"
+  status = 200
+  force = false
