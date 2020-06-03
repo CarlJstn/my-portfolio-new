@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Parallax } from "react-parallax";
 
 import Info from "./Info";
 import WebLink from "./WebLink";
@@ -40,129 +39,110 @@ class Project extends Component {
         : "#D32F2F";
 
     return (
-      <Parallax
-        bgImage={project.image}
-        bgImageAlt={project.imageAlt}
-        strength={400}
-      >
-        <div style={styles.projBackground}>
-          <div style={styles.projMain}>
-            <div style={styles.projContainer}>
-              <img
-                src={project.companyLogo}
-                alt={project.companyLogoAlt}
-                style={styles.companyLogo}
+      <div style={styles.projBackground}>
+        <img
+          src={project.image}
+          alt={project.imageAlt}
+          style={styles.projBackgroundImage}
+        />
+        <div style={styles.projMain}>
+          <div style={styles.projContainer}>
+            <img
+              src={project.companyLogo}
+              alt={project.companyLogoAlt}
+              style={styles.companyLogo}
+            />
+            <p style={styles.title}>{project.title}</p>
+            <div style={styles.sitesContainer}>
+              {project.website && (
+                <span style={styles.webLink}>
+                  <WebLink
+                    show={siteInfoShow}
+                    text="Link to live website."
+                    link={project.website}
+                    handleMouseOver={this.toggleInfo.bind(this, "siteInfoShow")}
+                    handleMouseOut={this.toggleInfo.bind(this, "siteInfoShow")}
+                  />
+                </span>
+              )}
+              {project.github && (
+                <span style={styles.webLink}>
+                  <WebLink
+                    github
+                    show={githubInfoShow}
+                    text="Link to github repository"
+                    link={project.github}
+                    handleMouseOver={this.toggleInfo.bind(
+                      this,
+                      "githubInfoShow"
+                    )}
+                    handleMouseOut={this.toggleInfo.bind(
+                      this,
+                      "githubInfoShow"
+                    )}
+                  />
+                </span>
+              )}
+            </div>
+            <p style={styles.description}>{project.description}</p>
+            <div style={styles.detailTitle}>
+              <Info
+                show={whatIDidInfoShow}
+                text="In what part of project I'm assigned to."
+                handleMouseOver={this.toggleInfo.bind(this, "whatIDidInfoShow")}
+                handleMouseOut={this.toggleInfo.bind(this, "whatIDidInfoShow")}
               />
-              <p style={styles.title}>{project.title}</p>
-              <div style={styles.sitesContainer}>
-                {project.website && (
-                  <span style={styles.webLink}>
-                    <WebLink
-                      show={siteInfoShow}
-                      text="Link to live website."
-                      link={project.website}
-                      handleMouseOver={this.toggleInfo.bind(
-                        this,
-                        "siteInfoShow"
-                      )}
-                      handleMouseOut={this.toggleInfo.bind(
-                        this,
-                        "siteInfoShow"
-                      )}
-                    />
-                  </span>
+              ASSIGNMENT:{" "}
+              <span style={styles.detailText}>{project.whatIDid}</span>
+            </div>
+            <div style={styles.detailTitle}>
+              <Info
+                show={whatIUseInfoShow}
+                text="Technologies, frameworks and plugins I use while developing this project."
+                handleMouseOver={this.toggleInfo.bind(this, "whatIUseInfoShow")}
+                handleMouseOut={this.toggleInfo.bind(this, "whatIUseInfoShow")}
+              />
+              WHAT I USE:{" "}
+              <span style={styles.detailText}>
+                {project.whatIUse.join(", ")}
+              </span>
+            </div>
+            <div
+              style={{
+                ...styles.detailTitle,
+                ...styles.contributionContainer,
+              }}
+            >
+              <Info
+                show={contributionInfoShow}
+                text="How much work I contribute to the whole project development based on where I'm assigned."
+                handleMouseOver={this.toggleInfo.bind(
+                  this,
+                  "contributionInfoShow"
                 )}
-                {project.github && (
-                  <span style={styles.webLink}>
-                    <WebLink
-                      github
-                      show={githubInfoShow}
-                      text="Link to github repository"
-                      link={project.github}
-                      handleMouseOver={this.toggleInfo.bind(
-                        this,
-                        "githubInfoShow"
-                      )}
-                      handleMouseOut={this.toggleInfo.bind(
-                        this,
-                        "githubInfoShow"
-                      )}
-                    />
-                  </span>
+                handleMouseOut={this.toggleInfo.bind(
+                  this,
+                  "contributionInfoShow"
                 )}
-              </div>
-              <p style={styles.description}>{project.description}</p>
-              <div style={styles.detailTitle}>
-                <Info
-                  show={whatIDidInfoShow}
-                  text="In what part of project I'm assigned to."
-                  handleMouseOver={this.toggleInfo.bind(
-                    this,
-                    "whatIDidInfoShow"
-                  )}
-                  handleMouseOut={this.toggleInfo.bind(
-                    this,
-                    "whatIDidInfoShow"
-                  )}
-                />
-                ASSIGNMENT:{" "}
-                <span style={styles.detailText}>{project.whatIDid}</span>
-              </div>
-              <div style={styles.detailTitle}>
-                <Info
-                  show={whatIUseInfoShow}
-                  text="Technologies, frameworks and plugins I use while developing this project."
-                  handleMouseOver={this.toggleInfo.bind(
-                    this,
-                    "whatIUseInfoShow"
-                  )}
-                  handleMouseOut={this.toggleInfo.bind(
-                    this,
-                    "whatIUseInfoShow"
-                  )}
-                />
-                WHAT I USE:{" "}
-                <span style={styles.detailText}>
-                  {project.whatIUse.join(", ")}
+              />
+              WORK:{" "}
+              <span style={styles.contribution}>
+                <span
+                  style={{
+                    ...styles.contributionPercentage,
+                    ...{
+                      width: `${showPercentage ? project.contribution : 0}%`,
+                      background: contributionColor,
+                    },
+                  }}
+                >
+                  {project.contribution}%
                 </span>
-              </div>
-              <div
-                style={{
-                  ...styles.detailTitle,
-                  ...styles.contributionContainer,
-                }}
-              >
-                <Info
-                  show={contributionInfoShow}
-                  text="How much work I contribute to the whole project development based on where I'm assigned."
-                  handleMouseOver={this.toggleInfo.bind(
-                    this,
-                    "contributionInfoShow"
-                  )}
-                  handleMouseOut={this.toggleInfo.bind(
-                    this,
-                    "contributionInfoShow"
-                  )}
-                />
-                WORK:{" "}
-                <span style={styles.contribution}>
-                  <span
-                    style={{
-                      ...styles.contributionPercentage,
-                      ...{
-                        width: `${showPercentage ? project.contribution : 0}%`,
-                        background: contributionColor,
-                      },
-                    }}
-                  >
-                    {project.contribution}%
-                  </span>
-                </span>
-              </div>
+              </span>
             </div>
           </div>
         </div>
-      </Parallax>
+      </div>
     );
   }
 }
@@ -171,6 +151,12 @@ const styles = {
   projBackground: {
     height: "100vh",
     display: "table",
+  },
+  projBackgroundImage: {
+    position: "absolute",
+    width: "100%",
+    height: "100vh",
+    objectFit: "cover",
   },
   projMain: {
     display: "table-cell",
