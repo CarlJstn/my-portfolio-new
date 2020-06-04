@@ -1,16 +1,55 @@
 import React, { Component } from "react";
-import { LinkedIn, GitHub, Facebook } from "@material-ui/icons";
+import {
+  LinkedIn,
+  GitHub,
+  Facebook,
+  HelpOutline,
+  HighlightOff,
+} from "@material-ui/icons";
+
+import WhatIUse from "./WhatIUse";
 
 class ContactMe extends Component {
+  state = { whatIUseShow: false };
+
+  componentWillUnmount() {
+    this.setState = () => {
+      return;
+    };
+  }
+
   handleSocialMediaClick = (url) => {
     window.open(url, "_blank");
   };
 
+  toggleWhatIUse = () => {
+    const { whatIUseShow } = this.state;
+
+    this.setState({ whatIUseShow: !whatIUseShow });
+  };
+
   render() {
-    const { whatIUseShow, handleWhatIUseToggle } = this.props;
+    const { whatIUseShow } = this.state;
+
     return (
       <div style={styles.contactMeContainer}>
+        {whatIUseShow && (
+          <WhatIUse handleSocialMediaClick={this.handleSocialMediaClick} />
+        )}
         <div style={styles.contactMeMain}>
+          {whatIUseShow ? (
+            <HighlightOff
+              className="fade-in-easy"
+              style={{ ...styles.whatIUseIcon, ...{ color: "#e64f4f" } }}
+              onClick={this.toggleWhatIUse.bind(this)}
+            />
+          ) : (
+            <HelpOutline
+              className="fade-in-easy"
+              style={styles.whatIUseIcon}
+              onClick={this.toggleWhatIUse.bind(this)}
+            />
+          )}
           <div style={styles.contactMeTable}>
             <p style={styles.contactMeHeader}>CONTACT ME</p>
             <div style={styles.contactMeHeaderUnderline}></div>
@@ -62,11 +101,6 @@ class ContactMe extends Component {
             </p>
           </div>
         </div>
-        {!whatIUseShow && (
-          <p style={styles.whatIUse} onClick={handleWhatIUseToggle.bind(this)}>
-            What I Use?
-          </p>
-        )}
       </div>
     );
   }
@@ -145,14 +179,10 @@ const styles = {
     position: "relative",
     top: "0px",
   },
-  whatIUse: {
+  whatIUseIcon: {
     position: "absolute",
-    bottom: "-30px",
-    left: "0",
-    right: "0",
-    margin: "0 auto",
-    width: "fit-content",
-    fontWeight: "bold",
+    right: "10px",
+    top: "10px",
     cursor: "pointer",
   },
 };

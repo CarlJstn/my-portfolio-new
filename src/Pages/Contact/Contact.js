@@ -3,23 +3,7 @@ import React, { Component } from "react";
 import ContactMe from "./ContactMe";
 
 class Contact extends Component {
-  state = { whatIUseShow: false };
-
-  componentWillUnmount() {
-    this.setState = () => {
-      return;
-    };
-  }
-
-  handleWhatIUseToggle = () => {
-    const { whatIUseShow } = this.state;
-
-    this.setState({ whatIUseShow: !whatIUseShow });
-  };
-
   render() {
-    const { whatIUseShow } = this.state;
-
     return (
       <div className="fade-in-easy">
         <div style={styles.contactContainer}>
@@ -31,10 +15,7 @@ class Contact extends Component {
               style={styles.headerBgImage}
             />
 
-            <ContactMe
-              whatIUseShow={whatIUseShow}
-              handleWhatIUseToggle={this.handleWhatIUseToggle}
-            />
+            <ContactMe />
           </div>
         </div>
       </div>

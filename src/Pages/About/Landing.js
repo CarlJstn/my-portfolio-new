@@ -58,7 +58,7 @@ class Landing extends Component {
             <div style={styles.myImageContainer}>
               <div style={styles.myImageMain}>
                 <img
-                  src="https://www.aalforum.eu/wp-content/uploads/2016/04/profile-placeholder.png"
+                  src="https://avatars0.githubusercontent.com/u/46716872?s=400&v=4"
                   alt="me"
                   style={styles.myImage}
                 />
