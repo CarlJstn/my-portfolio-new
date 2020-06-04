@@ -46,6 +46,27 @@
     "whatIDid": "Front-end",
     "whatIUse": ["ReactJs", "Redux", "Tailwindcss"],
     "contribution": "90",
-    "description": "A simple administration website for the Brandzone Web App. Where, admins can view a list of their users. Admins can also add, update & deactivate user’s account. And admins can also send announcements to it’s users."
+    "description": "A simple administration website for the Brandzone Web App. Where, admins can view a list of their users and events. Admins can also add, update & deactivate user’s account. And admins can also send announcements to it’s users."
+  },
+  {
+    "id": "5",
+    "image": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1591227505/portfolio-projects/fabian-grohs-dC6Pb2JdAqs-unsplash_lou1bb.jpg",
+    "imageAlt": "dvplr-connect",
+    "companyLogo": "",
+    "companyLogoAlt": "dvlpr-connect-icon",
+    "title": "Dvlpr Connect",
+    "whatIDid": "Front-end & Back-end",
+    "whatIUse": [
+      "ReactJs",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Bootstrap"
+    ],
+    "contribution": "100",
+    "description": "A simplified social media website intended for developers where they can create their own portfolio, create posts, like posts, comment. I develop this while learning and watching a MERN (MongoDB, Express.js, React, Node,js) Stack tutorial in Udemy as a part of my code learning in React.",
+    "website": "http://dvlprconnect.herokuapp.com/dashboard",
+    "github": "https://github.com/CarlJstn/mern-dvlprconnect"
   }
 ]

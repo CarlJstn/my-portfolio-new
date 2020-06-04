@@ -25,31 +25,35 @@ class Skills extends Component {
               {SkillList.map((skill) => {
                 return (
                   <div key={skill.id} style={styles.skillContainer}>
-                    <img
-                      src={skill.icon}
-                      alt={`${skill.skill}-icon`}
-                      style={styles.skillIcon}
-                    />
-                    <p style={styles.skillTitle}>{skill.skill}</p>
-                    <p style={styles.skillProficiency}>
-                      <span>Proficiency: </span>
-                      <span
-                        style={{
-                          color:
-                            skill.proficiency === "Superior"
-                              ? "red"
-                              : skill.proficiency === "Advanced"
-                              ? "orange"
-                              : skill.proficiency === "Intermediate"
-                              ? "yellow"
-                              : skill.proficiency === "Novice"
-                              ? "green"
-                              : "white",
-                        }}
-                      >
-                        {skill.proficiency}
-                      </span>
-                    </p>
+                    <div style={styles.skillTable}>
+                      <div style={styles.skillTextContainer}>
+                        <img
+                          src={skill.icon}
+                          alt={`${skill.skill}-icon`}
+                          style={styles.skillIcon}
+                        />
+                        <p style={styles.skillTitle}>{skill.skill}</p>
+                        <p style={styles.skillProficiency}>
+                          <span>Proficiency: </span>
+                          <span
+                            style={{
+                              color:
+                                skill.proficiency === "Superior"
+                                  ? "red"
+                                  : skill.proficiency === "Advanced"
+                                  ? "orange"
+                                  : skill.proficiency === "Intermediate"
+                                  ? "yellow"
+                                  : skill.proficiency === "Novice"
+                                  ? "green"
+                                  : "white",
+                            }}
+                          >
+                            {skill.proficiency}
+                          </span>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 );
               })}
@@ -133,25 +137,34 @@ const styles = {
     background: "rgba(255, 255, 255, 0.13)",
     position: "relative",
     margin: "10px 5px",
-    padding: "20px 10px",
+    padding: "0 10px",
     width: "calc(100% - 60px)",
-    maxWidth: "300px",
-    height: "calc(100% - 60px)",
+    maxWidth: "400px",
+    height: "calc(100% - 20px)",
     borderRadius: "5px",
     cursor: "grab",
   },
-  skillIcon: { height: "40%", display: "block", margin: "0 auto" },
+  skillTable: {
+    height: "100%",
+    width: "100%",
+    display: "table",
+  },
+  skillTextContainer: {
+    display: "table-cell",
+    verticalAlign: "middle",
+  },
+  skillIcon: { height: "120px", display: "block", margin: "0 auto" },
   skillTitle: {
     textAlign: "center",
-    marginTop: "20%",
-    fontSize: "35px",
+    marginTop: "30px",
+    fontSize: "38px",
     color: "white",
   },
   skillProficiency: {
     textAlign: "center",
     marginTop: "10px",
     color: "white",
-    fontSize: "18px",
+    fontSize: "16px",
     fontWeight: "bold",
   },
 };

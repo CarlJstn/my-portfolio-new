@@ -25,15 +25,19 @@ class Experience extends Component {
               {ExperienceList.map((exp) => {
                 return (
                   <div key={exp.id} id="exp" style={styles.expContainer}>
-                    <img
-                      src={exp.icon}
-                      alt={`${exp.exp}-icon`}
-                      style={styles.expIcon}
-                    />
-                    <p style={styles.expTitle}>{exp.exp}</p>
-                    <p style={styles.expLocation}>{exp.location}</p>
-                    <p style={styles.expLocation}>{exp.date}</p>
-                    <p style={styles.expPostion}>{exp.position}</p>
+                    <div style={styles.expTable}>
+                      <div style={styles.expTextContainer}>
+                        <img
+                          src={exp.icon}
+                          alt={`${exp.exp}-icon`}
+                          style={styles.expIcon}
+                        />
+                        <p style={styles.expTitle}>{exp.exp}</p>
+                        <p style={styles.expLocation}>{exp.location}</p>
+                        <p style={styles.expLocation}>{exp.date}</p>
+                        <p style={styles.expPostion}>{exp.position}</p>
+                      </div>
+                    </div>
                   </div>
                 );
               })}
@@ -118,18 +122,27 @@ const styles = {
     position: "relative",
     // margin: "10px 5px",
     margin: "10px auto",
-    padding: "20px 10px",
+    padding: "0 10px",
     width: "calc(100% - 60px)",
-    maxWidth: "300px",
-    height: "calc(100% - 60px)",
+    maxWidth: "400px",
+    height: "calc(100% - 20px)",
     borderRadius: "5px",
     cursor: "grab",
   },
-  expIcon: { height: "40%", display: "block", margin: "0 auto" },
+  expTable: {
+    height: "100%",
+    width: "100%",
+    display: "table",
+  },
+  expTextContainer: {
+    display: "table-cell",
+    verticalAlign: "middle",
+  },
+  expIcon: { height: "120px", display: "block", margin: "0 auto" },
   expTitle: {
     textAlign: "center",
-    marginTop: "20%",
-    fontSize: "35px",
+    marginTop: "30px",
+    fontSize: "30px",
     color: "white",
   },
   expLocation: {

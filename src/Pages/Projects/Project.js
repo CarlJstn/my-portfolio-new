@@ -47,11 +47,13 @@ class Project extends Component {
         />
         <div style={styles.projMain}>
           <div style={styles.projContainer}>
-            <img
-              src={project.companyLogo}
-              alt={project.companyLogoAlt}
-              style={styles.companyLogo}
-            />
+            {project.companyLogo && (
+              <img
+                src={project.companyLogo}
+                alt={project.companyLogoAlt}
+                style={styles.companyLogo}
+              />
+            )}
             <p style={styles.title}>{project.title}</p>
             <div style={styles.sitesContainer}>
               {project.website && (
