@@ -47,24 +47,26 @@
       topp = 0,
       left = 0;
 
-    let draggingFunction = (e) => {
-      document.addEventListener("mouseup", () => {
-        document.removeEventListener("mousemove", draggingFunction);
+    if (el) {
+      let draggingFunction = (e) => {
+        document.addEventListener("mouseup", () => {
+          document.removeEventListener("mousemove", draggingFunction);
+        });
+
+        el.scrollLeft = left - e.pageX + x;
+        el.scrollTop = topp - e.pageY + y;
+      };
+
+      el.addEventListener("mousedown", (e) => {
+        e.preventDefault();
+
+        y = e.pageY;
+        x = e.pageX;
+        topp = el.scrollTop;
+        left = el.scrollLeft;
+
+        document.addEventListener("mousemove", draggingFunction);
       });
-
-      el.scrollLeft = left - e.pageX + x;
-      el.scrollTop = topp - e.pageY + y;
-    };
-
-    el.addEventListener("mousedown", (e) => {
-      e.preventDefault();
-
-      y = e.pageY;
-      x = e.pageX;
-      topp = el.scrollTop;
-      left = el.scrollLeft;
-
-      document.addEventListener("mousemove", draggingFunction);
-    });
+    }
   </script>
 </html>

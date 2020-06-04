@@ -37,6 +37,12 @@ class Indicator extends Component {
     };
   }
 
+  componentWillUnmount() {
+    this.setState = () => {
+      return;
+    };
+  }
+
   handleIndicatorClick = (target) => {
     const height = window.innerHeight;
     const vhPixels = height * target + 67;
