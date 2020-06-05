@@ -70,7 +70,7 @@ const styles = {
     zIndex: "1",
     border: "1px solid rgba(128, 128, 128, 0.28)",
     borderRadius: "5px",
-    paddingBottom: "15px",
+    padding: "0 10px 15px",
   },
   arrow: {
     width: "0px",

@@ -93,8 +93,6 @@ const styles = {
     right: "1%",
     top: "calc(50% - 67px)",
     background: "#0000004f",
-    backdropFilter: "blur(3px)",
-    WebkitBackdropFilter: "blur(3px)",
     width: "30px",
     borderRadius: "35px",
     padding: "5px",

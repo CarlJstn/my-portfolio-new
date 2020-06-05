@@ -42,13 +42,11 @@ const styles = {
     objectFit: "cover",
   },
   headerBgOverlay: {
-    background: "rgba(0, 46, 82, 0.76)",
+    background: "rgba(0, 46, 82, 0.88)",
     width: "100%",
     height: "100%",
     position: "absolute",
     zIndex: "1",
-    backdropFilter: "blur(4px)",
-    WebkitBackdropFilter: "blur(4px)",
   },
 };
 

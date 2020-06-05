@@ -95,8 +95,8 @@ const styles = {
     minHeight: "567px",
     position: "absolute",
     background: "#00000061",
-    backdropFilter: "blur(4px)",
-    WebkitBackdropFilter: "blur(4px)",
+    backdropFilter: "blur(5px)",
+    WebkitBackdropFilter: "blur(5px)",
   },
   titleContainer: {
     width: "fit-content",
@@ -105,8 +105,6 @@ const styles = {
     margin: "90px auto 0px",
     background: "rgba(128, 128, 128, 0.65)",
     borderRadius: "5px",
-    backdropFilter: "blur(4px)",
-    WebkitBackdropFilter: "blur(4px)",
     textAlign: "center",
     color: "white",
   },
@@ -121,8 +119,6 @@ const styles = {
     background: "rgba(128, 128, 128, 0.25)",
     margin: "8vh 20px 0",
     borderRadius: "5px",
-    backdropFilter: "blur(4px)",
-    WebkitBackdropFilter: "blur(4px)",
     maxHeight: "60vh",
   },
   skillsMain: {

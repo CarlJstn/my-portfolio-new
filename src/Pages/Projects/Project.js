@@ -168,9 +168,7 @@ const styles = {
     width: "100vw",
   },
   projContainer: {
-    background: "rgba(0, 0, 0, 0.44)",
-    backdropFilter: "blur(5px)",
-    WebkitBackdropFilter: "blur(5px)",
+    background: "rgba(0, 0, 0, 0.8)",
     color: "white",
     padding: "10px 20px",
     margin: "0 auto",
