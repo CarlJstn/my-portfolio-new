@@ -8,7 +8,7 @@
   {
     "id": 1,
     "skill": "Node.js",
-    "proficiency": "Advanced",
+    "proficiency": "Intermediate",
     "icon": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1591091036/portfolio-skills-logo/1280px-Node.js_logo.svg_biexea.png"
   },
   {
@@ -49,6 +49,12 @@
   },
   {
     "id": 8,
+    "skill": "MySQL",
+    "proficiency": "Novice",
+    "icon": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1591332389/portfolio-skills-logo/mysql-min_dovg3v.png"
+  },
+  {
+    "id": 9,
     "skill": "Git",
     "proficiency": "Intermediate",
     "icon": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1591091036/portfolio-skills-logo/Git_icon.svg_c34zc5.png"

@@ -137,12 +137,12 @@ const styles = {
     verticalAlign: "middle",
   },
   contactMeHeader: {
-    color: "rgb(33, 150, 243)",
+    color: "rgb(15, 84, 140)",
     fontWeight: "bold",
     fontSize: "35px",
   },
   contactMeHeaderUnderline: {
-    background: "rgb(52, 139, 208)",
+    background: "rgb(15, 84, 140)",
     width: "40%",
     height: "7px",
     borderRadius: "5px",

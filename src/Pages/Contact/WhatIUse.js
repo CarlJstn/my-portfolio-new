@@ -6,9 +6,7 @@ class WhatIUse extends Component {
     return (
       <>
         <div className="fade-in" style={styles.whatIUsePopUp}>
-          <p style={styles.whatIUseHeader}>
-            WHAT I USE TO DEVELOP MY PORTFOLIO
-          </p>
+          <p style={styles.whatIUseHeader}>WHAT I USE TO BUILD THIS</p>
           <div style={styles.whatIUseHeaderUnderline}></div>
           <p
             style={styles.whatIUseInfo}
@@ -91,8 +89,8 @@ const styles = {
   },
   whatIUseHeaderUnderline: {
     width: "150px",
-    height: "5px",
-    background: "#6b6b6b",
+    height: "8px",
+    background: "rgba(0, 0, 0, 0.15)",
     borderRadius: "5px",
     margin: "10px auto 40px",
   },
