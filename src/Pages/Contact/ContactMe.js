@@ -1,11 +1,5 @@
 import React, { Component } from "react";
-import {
-  LinkedIn,
-  GitHub,
-  Facebook,
-  HelpOutline,
-  HighlightOff,
-} from "@material-ui/icons";
+import { LinkedIn, GitHub } from "@material-ui/icons";
 
 import WhatIUse from "./WhatIUse";
 
@@ -37,7 +31,7 @@ class ContactMe extends Component {
           <WhatIUse handleSocialMediaClick={this.handleSocialMediaClick} />
         )}
         <div style={styles.contactMeMain}>
-          {whatIUseShow ? (
+          {/* {whatIUseShow ? (
             <HighlightOff
               className="fade-in-easy"
               style={{ ...styles.whatIUseIcon, ...{ color: "#e64f4f" } }}
@@ -49,7 +43,7 @@ class ContactMe extends Component {
               style={styles.whatIUseIcon}
               onClick={this.toggleWhatIUse.bind(this)}
             />
-          )}
+          )} */}
           <div style={styles.contactMeTable}>
             <p style={styles.contactMeHeader}>CONTACT ME</p>
             <div style={styles.contactMeHeaderUnderline}></div>
@@ -63,7 +57,6 @@ class ContactMe extends Component {
                 </a>
               </span>
             </p>
-            <p style={styles.contactMeInfo}>+63 (921) 440 3152</p>
             <p
               style={{
                 ...styles.contactMeInfo,
@@ -88,16 +81,6 @@ class ContactMe extends Component {
                   )}
                 />
               </span>
-
-              <span style={styles.socialMediaSpan}>
-                <Facebook
-                  style={styles.fbIcon}
-                  onClick={this.handleSocialMediaClick.bind(
-                    this,
-                    "https://www.messenger.com/t/CarlJstn"
-                  )}
-                />
-              </span>
             </p>
           </div>
         </div>
@@ -119,8 +102,6 @@ const styles = {
     right: "0px",
     margin: "0px auto",
     background: "#ffffff8f",
-    backdropFilter: "blur(8px)",
-    WebkitBackdropFilter: "blur(8px)",
     borderRadius: "5px",
     border: "1px solid rgba(158, 158, 158, 0.31)",
     zIndex: "1",

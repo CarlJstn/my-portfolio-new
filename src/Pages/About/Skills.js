@@ -33,7 +33,7 @@ class Skills extends Component {
                           style={styles.skillIcon}
                         />
                         <p style={styles.skillTitle}>{skill.skill}</p>
-                        <p style={styles.skillProficiency}>
+                        {/* <p style={styles.skillProficiency}>
                           <span>Proficiency: </span>
                           <span
                             style={{
@@ -51,7 +51,7 @@ class Skills extends Component {
                           >
                             {skill.proficiency}
                           </span>
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </div>

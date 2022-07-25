@@ -55,7 +55,7 @@ class Landing extends Component {
           style={styles.nameContainer}
         >
           <div style={styles.nameMain}>
-            <div style={styles.myImageContainer}>
+            {/* <div style={styles.myImageContainer}>
               <div style={styles.myImageMain}>
                 <img
                   src="https://avatars0.githubusercontent.com/u/46716872?s=400&v=4"
@@ -63,7 +63,7 @@ class Landing extends Component {
                   style={styles.myImage}
                 />
               </div>
-            </div>
+            </div> */}
             <p
               className="name typing-effect"
               style={styles.name}
@@ -78,7 +78,7 @@ class Landing extends Component {
             <p
               className="typing-effect"
               style={styles.title}
-              text="Developer/Programmer"
+              text="Fullstack Developer"
             ></p>
           </div>
         </div>

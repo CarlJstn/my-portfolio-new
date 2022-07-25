@@ -29,7 +29,7 @@ class Footer extends Component {
             fontSize: "12px",
           }}
         >
-          Carl Justine M. De Guzman | &copy; 2020
+          Carl Justine M. De Guzman | &copy; 2022
         </p>
       </div>
     );

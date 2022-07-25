@@ -9,12 +9,6 @@ class Contact extends Component {
         <div style={styles.contactContainer}>
           <div style={styles.headerBg}>
             <div style={styles.headerBgOverlay}></div>
-            <img
-              src="https://res.cloudinary.com/dxdwckvxy/image/upload/v1591263471/portfolio/contact-me_xxfrwy.jpg"
-              alt="telephone"
-              style={styles.headerBgImage}
-            />
-
             <ContactMe />
           </div>
         </div>

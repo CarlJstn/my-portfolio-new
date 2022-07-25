@@ -112,12 +112,12 @@ const styles = {
     display: "flex",
     flexFlow: "column wrap",
     overflow: "auto",
+    alignItems: "center",
   },
   expContainer: {
     background: "rgba(255, 255, 255, 0.13)",
     position: "relative",
-    // margin: "10px 5px",
-    margin: "10px auto",
+    margin: "10px 5px",
     padding: "0 10px",
     width: "calc(100% - 60px)",
     maxWidth: "400px",
@@ -134,7 +134,12 @@ const styles = {
     display: "table-cell",
     verticalAlign: "middle",
   },
-  expIcon: { height: "120px", display: "block", margin: "0 auto" },
+  expIcon: {
+    height: "120px",
+    maxWidth: "230px",
+    display: "block",
+    margin: "0 auto",
+  },
   expTitle: {
     textAlign: "center",
     marginTop: "30px",

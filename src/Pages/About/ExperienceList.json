@@ -4,7 +4,15 @@
     "exp": "Bliimo Tech.",
     "position": "Associate Developer",
     "location": "10F Strata 100, Ortigas Center, Pasig",
-    "date": "May 24, 2019 - Now",
+    "date": "May 2019 - June 2020",
     "icon": "https://res.cloudinary.com/dxdwckvxy/image/upload/v1591146727/portfolio-exp-company-logo/bliimo_bwcozo.jpg"
+  },
+  {
+    "id": 1,
+    "exp": "Restoplus Pty Ltd",
+    "position": "Fullstack Developer",
+    "location": "118 Prospect Rd, Prospect SA 5083 Australia",
+    "date": "June 2020 - Now",
+    "icon": "https://www.restoplus.com/logo-green.svg"
   }
 ]

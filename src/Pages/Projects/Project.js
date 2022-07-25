@@ -25,18 +25,18 @@ class Project extends Component {
     const {
       whatIDidInfoShow,
       whatIUseInfoShow,
-      contributionInfoShow,
+      // contributionInfoShow,
       siteInfoShow,
       githubInfoShow,
-      showPercentage,
+      // showPercentage,
     } = this.state;
     const { project } = this.props;
-    const contributionColor =
-      project.contribution >= 80
-        ? "#388E3C"
-        : project.contribution >= 50
-        ? "#FF7043"
-        : "#D32F2F";
+    // const contributionColor =
+    //   project.contribution >= 80
+    //     ? "#388E3C"
+    //     : project.contribution >= 50
+    //     ? "#FF7043"
+    //     : "#D32F2F";
 
     return (
       <div style={styles.projBackground}>
@@ -94,7 +94,7 @@ class Project extends Component {
                 handleMouseOver={this.toggleInfo.bind(this, "whatIDidInfoShow")}
                 handleMouseOut={this.toggleInfo.bind(this, "whatIDidInfoShow")}
               />
-              ASSIGNMENT:{" "}
+              Assignment:{" "}
               <span style={styles.detailText}>{project.whatIDid}</span>
             </div>
             <div style={styles.detailTitle}>
@@ -104,7 +104,7 @@ class Project extends Component {
                 handleMouseOver={this.toggleInfo.bind(this, "whatIUseInfoShow")}
                 handleMouseOut={this.toggleInfo.bind(this, "whatIUseInfoShow")}
               />
-              WHAT I USE:{" "}
+              Technologies used:{" "}
               <span style={styles.detailText}>
                 {project.whatIUse.join(", ")}
               </span>
@@ -115,7 +115,7 @@ class Project extends Component {
                 ...styles.contributionContainer,
               }}
             >
-              <Info
+              {/* <Info
                 show={contributionInfoShow}
                 text="How much work I contribute to the whole project development based on where I'm assigned."
                 handleMouseOver={this.toggleInfo.bind(
@@ -140,7 +140,7 @@ class Project extends Component {
                 >
                   {project.contribution}%
                 </span>
-              </span>
+              </span> */}
             </div>
           </div>
         </div>
